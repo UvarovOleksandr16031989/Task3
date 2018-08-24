@@ -1,0 +1,53 @@
+.header{
+  background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/header-bg.png") no-repeat ;
+  background-size: cover;
+  padding: 175px 0 195px;
+  position: relative;
+  animation:load-right  1s normal forwards ease-in-out;
+  left: 2000px;
+  animation-delay: 1s;
+  background-position: center;
+}
+.header:before{
+  width: 153px;
+  height: 153px;
+  border: 1px solid rgba(#ffffff, .1);
+  top: 33px;
+  right: 335px;
+  content: '';
+  position: absolute;
+  border-radius: 100px;
+
+}
+.header:after{
+  width: 708px;
+  height: 741px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: -58px;
+  right: -219px;
+  content: '';
+  position: absolute;
+  border-radius: 400px;
+
+}
+.header__corporation{
+  @include font_gilroi_light(300,20px,#fff);
+  padding-bottom: 33px;
+}
+.header__title{
+  @include font_gilroy_exbold(400,100px,#fff);
+  padding-bottom: 29px;
+}
+.header__title:after{
+  width: 1px;
+  height: 100%;
+  background: rgba(#ffffff, .1);
+  top: 0px;
+  right: 367px;
+  content: '';
+  position: absolute;
+
+}
+.header__services{
+  @include font_gilroi_light(300,50px,#ff4343);
+}

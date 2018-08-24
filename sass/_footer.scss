@@ -1,0 +1,39 @@
+.section_footer{
+  position: relative;
+  z-index: 5;
+  background-color: #131313;
+  padding:  60px 0;
+}
+
+.container--footer{
+  padding: 10px;
+}
+
+.footer__content{
+  @include font_gilroi_light(300,13px,#fff);
+  line-height: 20px;
+}
+
+.footer__content:hover ,
+.footer__content:hover>.footer__link,
+.footer__content:hover>.footer__link>.footer__link--bold,
+.footer__content:hover .footer__mail
+{
+  color: #ff4343 ;
+  border-color: #ff4343;
+}
+
+.footer__inner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__link--bold{
+  @include font_gilroy_exbold(400,13px,#fff)
+}
+
+.footer__link--underline{
+  border-bottom: 1px solid #fff;
+}

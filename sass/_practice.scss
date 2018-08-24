@@ -1,0 +1,102 @@
+.practice{
+  background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/grey_bg.png") no-repeat ;
+  background-size: cover;
+  padding: 135px 0 195px;
+  background-position: center;
+  position: relative;
+  left: 2000px;
+  animation:load-right  1s normal forwards ease-in-out;
+  animation-delay: 1s;
+}
+
+.practice:after{
+  content: '';
+  width: 543px;
+  height: 591px;
+  border: 1px solid rgba(#c7c6c6, .1);
+  position: absolute;
+  border-radius: 400px;
+  top: 27px;
+  right: -40px;
+  z-index: -1;
+}
+.practice:before{
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: rgba(#c7c6c6, .1);
+  position: absolute;
+  top: 0;
+  right: 410px;
+  z-index: -1;
+}
+
+.practice__inner{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.practice__content{
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @include font_gilroi_light(300,13px,#efeeee);
+  line-height: 22px;
+}
+
+.practice__title-content{
+  @include font_gilroy_exbold(400,14px,#fff);
+  line-height: 20px;
+  padding: 20px 0;
+}
+
+.practice__about:hover .practice__title-content{
+  color: #ff4343;
+}
+
+.practice__title{
+  @extend .about_title;
+}
+
+.practice__indicator{
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(#c5c5c5, .3);
+  position: relative;
+
+}
+
+.practice__indicator:after{
+  content: '';
+  width: 16px;
+  height: 6px;
+  display: inline-block;
+  background: url("../images/pic/icons/arrow.png") no-repeat center;
+  left: 50%;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-left: -8px;
+  position: absolute;
+}
+.practice__about:hover .practice__indicator:after{
+  display: none;
+}
+.practice__about:hover .practice__indicator:before{
+  content: '';
+  width: 9px;
+  height: 8px;
+  display: inline-block;
+  background: url("../images/pic/icons/plus.png") no-repeat center;
+  left: 50%;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-left: -4.5px;
+  position: absolute;;
+}
+.practice__about{
+  padding: 0 0 40px 0;
+  cursor: pointer;
+  position: relative;
+}
