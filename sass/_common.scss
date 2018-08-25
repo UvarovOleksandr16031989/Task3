@@ -28,7 +28,6 @@ button,
 button:active, 
 button:focus{
   outline: none;
-  border: none;
 }
 
 @mixin font_gilroy_exbold($weight,$size,$color) {
@@ -106,6 +105,11 @@ select {
   appearance: none;
 }
 
+.title{
+  @include font_gilroy_exbold(400,40px,#fff);
+  padding-bottom: 50px;
+}
+
 ::-webkit-input-placeholder { /* Chrome */
   color: rgba(#393939, .5);
 }
@@ -121,8 +125,4 @@ select {
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: rgba(#393939, .5);
 }
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-.social a{
 
-
-}

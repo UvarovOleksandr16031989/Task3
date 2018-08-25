@@ -53,56 +53,115 @@
   }
 }
 @media screen and (max-width: 950px){
+  .header__inner{
+    display: none;
+  }
+
+  .aside__inner-language{
+    padding-bottom: 20px;
+  }
+
+  .aside__inner-networks{
+    padding-top: 80px;
+  }
   .flex--row{
     justify-content:flex-start;
   }
+
   .aside{
     width: 100%;
     top:-1000px;
-    padding-top: 50px;
+    padding: 60px 0  20px 0;
+    animation-delay: 0.1s;
+    transition: all ease 1s;
   }
+
+  .section_footer{
+    z-index: 1;
+  }
+
   .is-hidden{
     top: 0;
   }
+
   .aside__inner-img{
     display: none;
   }
+
   .container{
     padding: 0 20px;
   }
+
   .aside__header-mobile{
     display: flex;
     position: fixed;
     top: 0px;
     left: 0;
   }
+
   .footer__inner{
     flex-direction: column;
     text-align: center;
   }
+
   .footer__content-box{
     padding-bottom: 19px;
   }
+
   .order-5{
     order: -5;
   }
+
   .order-4{
     order: -4;
   }
+
   .order-3{
     order: -3;
   }
+
   .footer__mail{
     padding-bottom: 20px;
   }
+
   .section_footer{
     padding-top: 39px;
   }
+
   .footer__content--flex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .aside__inner-visibility{
+    animation-delay: 1s;
+  }
+  .header{
+    animation-delay: 0s;
+  }
+
+  .is-active{
+    height: 20px;
+  }
+  .is-active>.aside__burger-item{
+    width: 30px;
+    background: #fff;
+    margin: 0;
+  }
+  .is-active>.aside__burger-item:first-child{
+    transform: rotate(-45deg);
+  }
+
+  .is-active>.aside__burger-item:nth-child(2){
+    transform: translateX(100px);
+  }
+
+  .is-active>.aside__burger-item:last-child{
+    transform: rotate(45deg);
+    margin: -8px 0 0 0;
+  }
+
   .col-md-12{
     @include col(12);
   }
@@ -168,10 +227,12 @@
     border: none;
     padding-bottom: 10px;
   }
+
   .news__header-title,
   .news__container-btn{
     display: none;
   }
+
   .news__item:after{
     content: '';
     width: 16px;
@@ -220,6 +281,14 @@
   .col-sm-5 {
     @include col(5);
   }
+
+  .col-sm-9 {
+    @include col(9);
+  }
+  .col-sm-10 {
+    @include col(10);
+  }
+
 
   .col-sm-12 {
     @include col(12);

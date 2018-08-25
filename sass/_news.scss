@@ -32,10 +32,6 @@
   left: 560px;
 
 }
-.news__title{
-  @include font_gilroy_exbold(400,40px,#fff);
-  padding: 0 0 49px;
-}
 
 .news__header-title{
   @include font_gilroi_light(300,13px,#bebebe);
@@ -160,6 +156,7 @@
 .news__slider-btn{
   color: #fff;
   position: relative;
+  height: 100%;
 }
 
 .news__item:hover .news__content-head{

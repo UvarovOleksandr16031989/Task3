@@ -34,10 +34,7 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-.about_title{
-  @include font_gilroy_exbold(400,40px,#fff);
-  padding-bottom: 50px;
-}
+
 .about__content{
   @include font_gilroi_light(300,13px,#fff);
   line-height: 22px;

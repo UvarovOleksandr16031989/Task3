@@ -10,13 +10,11 @@
   display: none;
 }
 
-.trust__title{
-  @extend .about_title;
-}
+
 .trust__card {
   margin-bottom: 20px;
   height: 180px;
-  width: 300px;
+  max-width: 300px;
   border: 1px solid #efeeee;
   display: flex;
   flex-direction: row;
@@ -41,3 +39,5 @@
 .trust__card:hover .trust__img--red{
   display: inline-block;
 }
+
+
