@@ -1,1 +1,1 @@
-$(".aside__burger").click(function(){$(".aside__burger").toggleClass("is-active"),$(".aside").toggleClass("is-hidden")});
+$(".aside__burger").click(function(){$(".aside__burger").toggleClass("is-active"),$(".aside").toggleClass("is-hidden")});var mywindow=$(window),mypos=mywindow.scrollTop();mywindow.scroll(function(){mywindow.scrollTop()>2700?$(".header__inner").addClass("rotate"):$(".header__inner").removeClass("rotate"),mypos=mywindow.scrollTop()});
