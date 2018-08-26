@@ -68,16 +68,23 @@
 
 }
 
-.header__marrow{
+.header__arrow{
   transition: all ease 0.5s;
+  opacity: 1;
 }
 
-.rotate>.header__marrow{
-  transform: rotate(180deg);
+.arrow_bottom>.header__arrow{
+  opacity: 0;
 }
 
 .header__mouse{
-  padding: 0 0 10px 0;
+  padding: 10px 0 10px 0;
+}
+.header__arrow--top{
+  opacity: 0;
+  transform: rotate(180deg);
 }
 
-
+.arrow_top>.header__arrow--top{
+  opacity: 1;
+}

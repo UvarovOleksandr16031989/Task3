@@ -3,6 +3,9 @@
   z-index: 5;
   background-color: #131313;
   padding:  60px 0;
+  animation:load-right  1s normal forwards ease-in-out;
+  left: 2000px;
+  animation-delay: 1s;
 }
 
 .container--footer{
