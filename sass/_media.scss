@@ -4,6 +4,15 @@
     justify-content: space-around;
   }
 
+  .title__ellipse{
+    width: 220px;
+    height: 220px;
+  }
+
+  .error__title{
+    font-size: 200px;
+  }
+
   .col-lg-8{
     @include col(8);
   }
@@ -209,6 +218,23 @@
   .col-md-1{
     @include col(1);
   }
+  .error__inner-btn{
+    display: flex;
+  }
+  .error__inner{
+    padding: 180px 0 56px;
+  }
+  .error__inner:before {
+    width: 90%;
+    height: 90%;
+    top: 70px;
+  }
+  .flex--row-center {
+    justify-content: center;
+  }
+  .contacts__inner{
+    padding: 0;
+  }
 
 }
 
@@ -266,7 +292,7 @@
   }
 
   .header{
-    padding: 317px 0 30px 0;
+
   }
 
 
@@ -292,6 +318,35 @@
 
   .col-sm-12 {
     @include col(12);
+  }
+
+  .error__title{
+    font-size: 150px;
+  }
+  .title__ellipse {
+    width: 170px;
+    height: 170px;
+  }
+  .error__inner:before {
+    width: 90%;
+    height: 80%;
+    top: 70px;
+  }
+}
+@media screen and (max-width: 600px){
+  .error__inner:before {
+    width: 110%;
+    height: 80%;
+    top: 70px;
+  }
+  .contacts{
+    padding: 172px 0 182px 0;
+  }
+  .contacts__inner{
+    text-align: center;
+  }
+  .contacts__inner-img{
+    justify-content: center;
   }
 }
 
@@ -320,6 +375,15 @@
   .trust__card {
     height: 83px;
   }
+  .title__ellipse {
+    width: 100px;
+    height: 100px;
+  }
+
+  .error__title {
+    font-size: 100px;
+  }
+
 }
 
  

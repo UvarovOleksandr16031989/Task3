@@ -11,7 +11,7 @@ $('.aside__nav-link').click(function() {
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 mywindow.scroll(function() {
-    if(mywindow.scrollTop() > 2700)
+    if(mywindow.scrollTop() > 2600)
     {
         $('.header__inner').addClass('arrow_bottom');
     }
@@ -31,4 +31,26 @@ mywindow.scroll(function() {
         $('.header__inner').removeClass('arrow_top');
     }
     mypos = mywindow.scrollTop();
+});
+
+
+$('.business__inner').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+            }
+        },
+]
+
 });

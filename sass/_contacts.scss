@@ -1,0 +1,74 @@
+.contacts{
+  background:linear-gradient(rgba(#181818 , .2), rgba(#181818 , .2) ), url("../images/pic/background/contacts-bg.jpg") no-repeat ;
+  background-size: cover;
+  padding: 17.56% 0 16.75%;
+  background-position: center;
+  position: relative;
+
+}
+
+.contacts__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 56px;
+}
+
+.contacts__content{
+  @include font_gilroi_light(300,20px,#fff);
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 0 30px 0;
+  transition: 1s;
+}
+.flex--row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.contacts__content--link-map{
+  @extend .contacts__content;
+  font-size: 15px;
+  padding: 0;
+
+}
+
+.contacts__content--link:hover{
+  color: #f53434;
+}
+
+.contacts__content--bold{
+  @include font_gilroy_exbold(400,20px,#fff);
+  padding: 0;
+  transition: 1s;
+}
+
+
+
+.contacts__content:hover>.contacts__content--bold{
+  color: #f53434;
+}
+
+.contacts__inner-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contacts__networks-link--fb{
+  width: 7px;
+
+}
+
+.contacts__networks-link--in{
+  width: 17px;
+  padding: 0 15px;
+}
+
+.contacts___networks-link--youtube{
+  width: 22px;
+}
+.contacts+.section_footer{
+  position: relative;
+  bottom: 0;
+}

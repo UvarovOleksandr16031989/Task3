@@ -1,0 +1,86 @@
+.business{
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+  background-position: center;
+  width: 100%;
+  z-index: -1;
+}
+
+.aside__networks-link--mail{
+  width: 11px;
+}
+
+.business__card{
+  background: url("../images/pic/background/card.jpg") no-repeat center;
+  height: 100vh;
+  width: 30%;
+  background-size: cover;
+}
+
+.business__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 -20px;
+}
+
+.business__inner>.slick-arrow{
+  display: none;
+}
+
+.business__name{
+  @include font_gilroy_exbold(400,14px,#fff);
+  padding-bottom: 20px;
+}
+
+.business__card {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 30px ;
+  transform: translateY(-50px);
+  padding-bottom: 50px;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.business__about{
+  @include font_gilroi_light(300,13px,#efeeee);
+  line-height: 22px;
+  padding-bottom: 19px;
+}
+
+.business__content{
+  max-width: 223px;
+  position: relative;
+  z-index: 5;
+}
+
+.business__content::before{
+  content: '';
+  position: absolute;
+  width: 166px;
+  height: 166px;
+  background-color: #f53434;
+  opacity: 0.1;
+  border-radius: 200px;
+  display: block;
+  top: -65px;
+  left: -30px;
+
+}
+.business__number:hover{
+  color: #ff4343 ;
+}
+
+.business__number:hover>span{
+  color: #ff4343 ;
+}
+.business__inner_contact{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  padding-top: 20px;
+}

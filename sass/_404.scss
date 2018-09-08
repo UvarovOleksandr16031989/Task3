@@ -1,0 +1,116 @@
+.error{
+  background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/404-bg.jpg") no-repeat center ;
+  background-size: cover;
+  padding: 17.9% 0;
+  position: relative;
+}
+.error:before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.1;
+  right: 23%;
+  top: 0;
+  position: absolute;
+
+}
+
+.error__inner:before{
+  content: '';
+  position: absolute;
+  width: 55.23%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  opacity: 0.1;
+  top: 0px;
+  border-radius: 500px;
+  transform: translateX(-50%);
+
+}
+
+.error__title {
+  @include font_gilroy_exbold(400, 300px, #fff);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.error__inner{
+  text-align: center;
+
+}
+.title__ellipse{
+  display: inline-block;
+  border-radius: 500px;
+  width: 277px;
+  height: 277px;
+  border: 1px solid #ffffff;
+  opacity: 0.1;
+  position: relative;
+}
+
+.title__ellipse::after{
+  content: '';
+  width: 207px;
+  height: 207px;
+  background-color: #f53434;
+  border-radius: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: pulse  1.5s infinite linear;
+}
+
+.error__content{
+  padding: 0 15px;
+}
+
+.error__inner-btn{
+  margin: 0 auto;
+  width: 218px;
+  height: 50px;
+  border: 1px solid rgba(#f7f7f9, .5);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: all ease 0.5s;
+  margin-bottom: 80px;
+  position: relative;
+  z-index:1;
+}
+.error__inner-btn:hover{
+
+  border-color: rgba(#f53434, .5);
+}
+
+.error__inner-btn:hover>.error__btn {
+  color: #f53434;
+}
+
+.error__btn{
+  padding: 9% 34%;
+  cursor: pointer;
+  @include font_gilroi_light(300,12px,#fff);
+  transition: all ease 0.5s;
+}
+@keyframes  pulse {
+  0%{
+    width: 100%;
+    height: 100%;
+  }
+  50%{
+    width: 80%;
+    height: 80%;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+  }
+
+}

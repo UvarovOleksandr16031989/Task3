@@ -3,11 +3,11 @@
   display: inline-block;
   padding: 30px 35px 0;
   text-align: center;
-  position: fixed;
+  position:fixed;
   top: 0;
   left: -500px;
   height: 100%;
-  z-index: 5;
+  z-index: 7;
   animation:load-left  1s ease forwards ;
   animation-delay: 0.1s;
 }
@@ -20,6 +20,7 @@
     left: 0;
   }
 }
+
 @keyframes load-right {
   0%{
     left: 2000px;
@@ -28,14 +29,17 @@
     left: 0;
   }
 }
+
 .aside__inner-language{
   padding: 39px 0 67px 0;
 }
-.aside__inner-visibility{
+
+.inner-visibility{
   animation:load  1s normal forwards ease-in-out;
   animation-delay: 2s;
   opacity: 0;
 }
+
 @keyframes load {
   0%{
     opacity: 0;
@@ -91,6 +95,7 @@
   transition: all ease 0.5s;
   position: relative;
 }
+
 .aside__inner-btn{
   display: inline-block;
 }
@@ -108,7 +113,6 @@
 
 .aside__btn:hover::after{
   font-size: 20px;
-
 }
 
 .aside__btn:hover{
@@ -118,22 +122,38 @@
 }
 
 .aside__networks-link {
-  display: inline-block;
-  border-radius: 30px;
-  width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 0.390625vw;
+}
+
+.aside__networks-link--fb{
+  width: 5px;
+}
+
+.aside__networks-link--in{
+  width: 10px;
+}
+
+.aside__networks-link--youtube{
+  width: 14px;
+}
+
+.aside__networks-link>svg{
+  fill: #ffffff;
+  transition: .5s;
+  width: 100%;
+  height: 100%;
 }
 
 .aside__networks-img{
   width: auto;
 }
 
-.aside__networks-link:hover{
-  background-color: #ff4343;
-
+.aside__networks-link:hover>svg{
+  fill:  #ff4343;
 }
 .aside__inner-networks{
   display: flex;
@@ -147,11 +167,8 @@
   display: none;
   flex-direction: row;
   justify-content: space-between;
-
   padding: 20px ;
   align-items: flex-end;
-
-
 }
 
 .aside__burger-item{

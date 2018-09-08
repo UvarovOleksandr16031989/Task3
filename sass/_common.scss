@@ -4,11 +4,8 @@
   padding: 0 16px;
   overflow: hidden;
   padding-left: 248px;
-}
-.wrap{
-  overflow: hidden;
-}
 
+}
 
 .clearfix::after{
   content: '';
@@ -126,3 +123,7 @@ select {
   color: rgba(#393939, .5);
 }
 
+
+.footer_up>.main>.stop{
+  margin-bottom: 100px;
+}

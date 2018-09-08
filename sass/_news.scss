@@ -2,11 +2,15 @@
   background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/grey_bg.png") no-repeat ;
   background-size: cover;
   padding: 105px 0 95px;
-  position: relative;
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
   background-position: center;
+  width: 100%;
+
 }
 
-.section_news:after{
+.section_news:before{
   content: '';
   position: absolute;
   width: 593px;
@@ -22,7 +26,7 @@
   z-index: 1;
   cursor: pointer;
 }
-.section_news:before{
+.section_news:after{
   content: '';
   width: 1px;
   height: 100%;
@@ -126,6 +130,7 @@
   justify-content: space-between;
   padding: 0 16px 0 65px;
   position: relative;
+  transition: .5s;
 }
 .more-btn:after{
   position: absolute;
@@ -136,6 +141,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 52px;
+  transition: .5s;
 }
 
 .news__slider{
@@ -147,9 +153,8 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
-  animation:load-right  1s normal forwards ease-in-out;
-  left: 2000px;
-  animation-delay: 1s;
+  transition: .5s;
+
 }
 
 .news__slider:after{
@@ -181,6 +186,7 @@
 
 .arrow-btn{
   @include font_arial(400,13px,#fff);
+  transition: .5s;
 }
 
 .more-btn:hover{
@@ -215,7 +221,7 @@
   height: 136px;
   background-color: rgba(#e34141, .1);
   border-radius: 200px;
-  bottom: 34px;
+  bottom: 249px;
   right: 20%;
 
 }

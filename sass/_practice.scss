@@ -2,11 +2,10 @@
   background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/grey_bg.png") no-repeat ;
   background-size: cover;
   padding: 135px 0 195px;
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
   background-position: center;
-  position: relative;
-  left: 2000px;
-  animation:load-right  1s normal forwards ease-in-out;
-  animation-delay: 1s;
 }
 
 .practice:before{
