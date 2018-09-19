@@ -1,26 +1,25 @@
 
 .company{
   background: linear-gradient(rgba(#181818 , .2), rgba(#181818 , .2) ),url("../images/pic/background/color_bg.jpg") 30% 0 no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow: hidden;
-  height: 100vh;
   position: absolute;
-  opacity: 0;
-  transition: 1s;
+  opacity: 1;
+  transition: 0.5s;
   background-position: center;
   width: 100%;
   z-index: -1;
 }
 
 .company__content{
-  @include font_gilroi_light(300,12px,#efeeee);
-  line-height: 22px;
-  padding-bottom: 40px;
+  @include font_gilroi_light(300,1.02vw,#efeeee);
+  line-height: 1.72vw;
+  padding-bottom: 3.13vw;
 }
 
 .company__inner{
-  padding: 20.2%  0 ;
-  padding-right: 90px;
+  padding: 10.2vw  0 ;
+  padding-right: 7.03vw;
 
 }
 
@@ -40,4 +39,11 @@
 }
 .more-btn:hover>.company_svg>svg>.st0{
   stroke:  #ff4343;
+}
+
+.company__inner>.more-btn{
+  padding-left: 49px;
+}
+.company__title{
+  padding-bottom: 3.83vw;
 }

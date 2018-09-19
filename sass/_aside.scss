@@ -1,15 +1,19 @@
 .aside{
   background-color: rgba(#181818 ,.85);
   display: inline-block;
-  padding: 30px 35px 0;
+  padding: 2.34vw 3.13vw 0;
   text-align: center;
   position:fixed;
   top: 0;
   left: -500px;
   height: 100%;
-  z-index: 7;
+  z-index: 6;
   animation:load-left  1s ease forwards ;
   animation-delay: 0.1s;
+  transition: 0.5s;
+}
+.footer_up .aside {
+  top: -11.3vw;
 }
 
 @keyframes load-left {
@@ -21,37 +25,14 @@
   }
 }
 
-@keyframes load-right {
-  0%{
-    left: 2000px;
-  }
-  100%{
-    left: 0;
-  }
-}
-
 .aside__inner-language{
-  padding: 39px 0 67px 0;
-}
-
-.inner-visibility{
-  animation:load  1s normal forwards ease-in-out;
-  animation-delay: 2s;
-  opacity: 0;
-}
-
-@keyframes load {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+  padding: 3.05vw 0 6.23vw 0;;
 }
 
 .aside__language{
-  @include font_gilroi_light(300,12px,#efeeee);
-  padding: 0 6px;
+  @include font_gilroi_light(300,0.94vw,#efeeee);
+  padding: 0 0.47vw;
+  transition: 1s;
 }
 
 .aside__language:hover{
@@ -65,8 +46,9 @@
 }
 
 .aside__nav-link{
-  @include font_gilroi_light(300,13px,#fff);
-  line-height: 50px;
+  @include font_gilroi_light(300,1.02vw,#fff);
+  line-height: 3.91vw;
+  transition: 1s;
 }
 
 .aside__nav-link:hover{
@@ -89,15 +71,18 @@
   border: 1px solid #efeeee;
   min-width: 155px;
   min-height: 40px;
-  @include font_gilroi_light(300,10px,#efeeee);
+  @include font_gilroi_light(300,0.78vw,#efeeee);
   display: block;
-  margin-top: 20px;
-  transition: all ease 0.5s;
+  margin-bottom: 20px;
   position: relative;
+  transition: 1s;
+  line-height: 3.1vw;
+  width: 12.11vw;
 }
 
 .aside__inner-btn{
   display: inline-block;
+  padding-top: 1.56vw;
 }
 
 .aside__btn::after{
@@ -112,13 +97,16 @@
 }
 
 .aside__btn:hover::after{
-  font-size: 20px;
+  font-size: 1.56vw;
 }
 
 .aside__btn:hover{
   color: #ff4343;
   border-color: #ff4343;
-  font-size: 0px;
+  font-size: 0;
+  min-width: 12.11vw;
+  min-height: 40px;
+  width: 12.11vw;
 }
 
 .aside__networks-link {
@@ -126,19 +114,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0.390625vw;
+  margin: 0 0.39vw;
 }
 
 .aside__networks-link--fb{
-  width: 5px;
+  width: 0.39vw;
 }
 
 .aside__networks-link--in{
-  width: 10px;
+  width: 0.78vw;
 }
 
 .aside__networks-link--youtube{
-  width: 14px;
+  width: 1.09vw;
 }
 
 .aside__networks-link>svg{
@@ -160,7 +148,7 @@
   flex-direction: row ;
   justify-content: center;
   align-items: flex-end;
-  padding-top: 90px;
+  padding-top: 6.47vw;
 }
 
 .aside__header-mobile{
@@ -199,6 +187,9 @@
   padding-right: 40px;
 }
 
+.red{
+  color: #ff4343;
+}
 
 
 

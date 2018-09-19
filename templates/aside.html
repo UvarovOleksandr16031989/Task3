@@ -1,7 +1,9 @@
+@@include('../templates/language_ru.html')
+@@include('../templates/consultation.html')
 <aside class="aside">
     <div class="aside__header-mobile col-12">
         <figure class="header__logo">
-            <a href=index.html"  class="aside__logo-link">
+            <a href="index.html"  class="aside__logo-link">
                 <img src="images/logos/logo.png" alt="img" class="aside__img">
             </a>
         </figure>
@@ -22,13 +24,13 @@
     </figure>
     <div class="inner-visibility">
         <div class="aside__inner-language">
-            <a href="404.html" class="aside__language">
+            <button  class="aside__language" id="ukr">
                 Укр
-            </a>
-            <button class="aside__language">
+            </button>
+            <button class="aside__language red"  id="rus">
                 Рус
             </button>
-            <button class="aside__language">
+            <button class="aside__language" id="usa">
                 Анг
             </button>
         </div>
@@ -36,10 +38,10 @@
             <a href="about_company.html" class="aside__nav-link">
                 О нас
             </a>
-            <a href="#practice" class="aside__nav-link">
+            <a href="administrative_law.html" class="aside__nav-link">
                 Практики
             </a>
-            <a href="#news" class="aside__nav-link">
+            <a href="news_page.html" class="aside__nav-link">
                 Блог
             </a>
             <a href="contacts.html" class="aside__nav-link">
@@ -47,10 +49,10 @@
             </a>
         </nav>
         <div class="aside__inner-btn">
-            <button class="aside__btn ">
+            <button class="aside__btn " id="consultation">
                 Заказать консультацию
             </button>
-            <button class="aside__btn">
+            <button class="aside__btn aside__btn--little">
                 Подписать договор
             </button>
         </div>

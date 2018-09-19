@@ -1,0 +1,111 @@
+.news-page + .footer{
+  bottom:0;
+  z-index: 80;
+}
+
+.news-page~.aside{
+  position: relative;
+}
+.news-page{
+  background:linear-gradient(rgba(#181818 , .2), rgba(#181818 , .2) ), url("../images/pic/background/contacts-bg.jpg") no-repeat ;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 6vw 0 12vw 0;
+
+}
+.news_page__inner{
+
+}
+.news-page__container-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1.83vw;
+  margin-top: 2vw;
+}
+
+.news-page__inner-practice{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.news-page__practice_title{
+  @include font_gilroi_light(300,1.02vw,#bebebe);
+  margin-bottom: 49px;
+}
+
+.news-page >.container> .news__inner::after{
+  display: none;
+}
+
+.hover>a{
+  color: #ff4345;
+}
+.news-page__link:hover{
+  color: #ff4345;
+}
+
+.news-page__link{
+  z-index: 1;
+
+}
+
+.news-page__inner-select{
+  background: transparent;
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(#f7f7f9, .5);
+  @include font_gilroi_light(300,12px,#fff);
+  box-sizing: border-box;
+  padding: 0 0 0 47px;
+}
+.news-page__select-inner{
+  position: relative;
+  margin: 0 auto;
+  width: 290px;
+  height: 50px;
+  display: none;
+}
+.news-page__select-inner::after{
+  display: block;
+  content: '';
+  width: 1px;
+  height: 22px;
+  background-color: #f7f7f9;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 241px;
+  z-index: 1;
+}
+.news-page__select-inner::before{
+  content: '';
+  background: url("../images/pic/icons/icon_arrow.png");
+  display: inline-block;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 10px;
+  height: 6px;
+}
+
+.news-page__practice_option{
+  background: rgba(#000, .1);
+  color: #131313;
+}
+
+.news-page__title{
+  padding-bottom: 2vw;
+}
+
+.news__content--one_block {
+  padding: 7.53vw 5px 0;
+}
+.news__slider--one_block{
+  margin-right: 3vw;
+}

@@ -1,9 +1,16 @@
 .error{
   background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/404-bg.jpg") no-repeat center ;
   background-size: cover;
-  padding: 17.9% 0;
+  padding: 10.9vw 0 12vw;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
+
+.error+.footer{
+  bottom: 0;
+}
+
 .error:before{
   content: '';
   display: block;
@@ -14,7 +21,6 @@
   right: 23%;
   top: 0;
   position: absolute;
-
 }
 
 .error__inner:before{
@@ -27,11 +33,10 @@
   top: 0px;
   border-radius: 500px;
   transform: translateX(-50%);
-
 }
 
 .error__title {
-  @include font_gilroy_exbold(400, 300px, #fff);
+  @include font_gilroy_exbold(400, 23.44vw, #fff);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,11 +48,12 @@
   text-align: center;
 
 }
+
 .title__ellipse{
   display: inline-block;
   border-radius: 500px;
-  width: 277px;
-  height: 277px;
+  width: 21.64vw;
+  height: 21.64vw;
   border: 1px solid #ffffff;
   opacity: 0.1;
   position: relative;
@@ -84,8 +90,8 @@
   position: relative;
   z-index:1;
 }
-.error__inner-btn:hover{
 
+.error__inner-btn:hover{
   border-color: rgba(#f53434, .5);
 }
 
@@ -99,6 +105,7 @@
   @include font_gilroi_light(300,12px,#fff);
   transition: all ease 0.5s;
 }
+
 @keyframes  pulse {
   0%{
     width: 100%;

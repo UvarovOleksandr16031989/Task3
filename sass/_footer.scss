@@ -2,19 +2,20 @@
   position: fixed;
   z-index: 10;
   background-color: #131313;
-  padding:  60px 0;
+  padding:  3.69vw 0;
   width: 100%;
-  bottom: -1000px;
-
+  bottom: -100%;
+  transition: .2s;
+}
+.footer_up header {
+  top: -12.109375vw;
 }
 
-.container--footer{
-  padding: 10px;
-}
+
 
 .footer__content{
-  @include font_gilroi_light(300,13px,#fff);
-  line-height: 20px;
+  @include font_gilroi_light(300,1.02vw,#fff);
+  line-height: 1.56vw;
 }
 
 .footer__content:hover ,
@@ -41,13 +42,13 @@
 }
 
 .footer__link{
-  @include font_gilroi_light(300,13px,#fff);
-  line-height: 22px;
+  @include font_gilroi_light(300,1.02vw,#fff);
+  line-height: 1.72vw;
   transition: 1s;
 }
 
 .footer__link--bold{
-  @include font_gilroy_exbold(400,13px,#fff);
+  @include font_gilroy_exbold(400,1.02vw,#fff);
   transition: 1s;
 }
 

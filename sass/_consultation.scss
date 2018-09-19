@@ -1,0 +1,69 @@
+.consultation{
+  position: fixed;
+  left: -4000px;
+  background-color: rgba(#020202, .9);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 20;
+  padding-top: 156px;
+}
+
+.consultation__title{
+  @include font_gilroy_exbold(400,40px,#fff);
+  padding-bottom: 22px;
+}
+
+.consultation__content{
+  @include font_gilroi_light(300,20px,#fff);
+  line-height: 30px;
+  padding-bottom: 39px;
+}
+.consultation__name{
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgba(#f7f7f9, .5);
+  background: transparent;
+  @include font_gilroi_light(300,12px,#fff);
+  vertical-align: middle;
+  padding-left: 31px;
+  box-sizing: border-box;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.consultation__name:focus{
+  padding-bottom: 10px;
+}
+
+.consultation__inner{
+  max-width: 509px;
+}
+.consultation__phone{
+  @extend .consultation__name;
+  transition: 0.5s;
+}
+
+.consultation__email{
+  @extend .consultation__name;
+  transition: 0.5s;
+}
+
+.consultation__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.consultation__btn{
+  @extend .more-btn;
+  margin-top: 30px;
+}
+
+.consultation__btn:after{
+ @extend .more-btn:after;
+}
+
+.open{
+  left: 0;
+}

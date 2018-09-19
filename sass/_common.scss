@@ -3,17 +3,23 @@
   max-width: 1195px;
   padding: 0 16px;
   overflow: hidden;
-  padding-left: 248px;
+  padding-left: 288px;
 
 }
 
+body{
+  background-color: #131313;
+}
 .clearfix::after{
   content: '';
   clear: both;
   display: table;
   overflow: hidden;
 }
-
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
 textarea, 
 textarea:active, 
 textarea:focus {
@@ -33,21 +39,25 @@ button:focus{
   font-size: $size;
   font-family: 'Conv_RADOMIR TINKOV - GILROY-EXTRABOLD_1';
 }
+
 @mixin font_gilroi_light($weight,$size,$color) {
   color: $color;
   font-weight: $weight;
   font-size: $size;
   font-family: 'Conv_RADOMIR TINKOV - GILROY-LIGHT_1';
 }
+
 @mixin font_arial($weight,$size,$color) {
   color: $color;
   font-weight: $weight;
   font-size: $size;
   font-family: "AirportRegular";
 }
+
 @mixin col($col) {
   width: (100%/12*$col);
 }
+
 .col-1{
   @include col(1);
 }
@@ -84,7 +94,7 @@ button:focus{
   @include col(11);
 }
 
-.co-7{
+.col-7{
   @include col(7);
 }
 
@@ -103,27 +113,168 @@ select {
 }
 
 .title{
-  @include font_gilroy_exbold(400,40px,#fff);
-  padding-bottom: 50px;
+  @include font_gilroy_exbold(400,3.13vw,#fff);
+  padding-bottom: 3.91vw;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
-  color: rgba(#393939, .5);
+  color: #fff;
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgba(#393939, .5);
+  color: #fff;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(#393939, .5);
+  color: #fff;
 }
 
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: rgba(#393939, .5);
+  color: #fff;
+}
+.move-top,
+.hover-top{
+  padding-bottom: 10px;
+}
+.flex--column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.flex--start{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.footer_up>.main>.stop{
+  margin-bottom: 100px;
+}
+
+.flex--end{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.slick-list{
+  padding-left: 1.7vw;
+  margin-left: -1.7vw;
+  width: 99%;
+}
+
+.number_section{
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  z-index: 30;
+  transition: 1s;
+}
+
+.number_section__top{
+  @include font_gilroi_light(300,20px,rgba(#fff, .7));
+  border-bottom: solid 2px rgba(#fff, .7);
+  padding-bottom: 8px;
+}
+
+.number_section__bottom{
+  padding-top: 8px;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  @include font_gilroi_light(300,20px,rgba(#fff, .7));
+
+}
+.sec1~.number_section{
+  opacity: 0;
+}
+.sec2.active~.number_section,
+.sec3.active~.number_section,
+.sec4.active~.number_section,
+.sec5.active~.number_section
+{
+  opacity: 1;
+}
+.sec1.active~.number_section>.number_section__bottom--1{
+  opacity: 1;
+}
+.sec2.active~.number_section>.number_section__bottom--2{
+  opacity: 1;
+}
+.sec3.active~.number_section>.number_section__bottom--3{
+  opacity: 1;
+}
+.sec4.active~.number_section>.number_section__bottom--4{
+  opacity: 1;
+}
+.sec5.active~.number_section>.number_section__bottom--5{
+  opacity: 1;
+}
+@keyframes load-bottom {
+  0%{
+    left: -5000px;
+  }
+
+  100%{
+    left: 0;
+  }
+
+}
+
+.delay-1,
+.delay-2,
+.delay-3,
+.delay-4,
+.delay-5,
+.delay-6,
+.delay-7{
+  transition: 1s;
+  left: -5000px;
+  position: relative;
+
 }
 
 
-.footer_up>.main>.stop{
-  margin-bottom: 100px;
+
+.active .delay-1{
+  animation: load-bottom 1s ease forwards ;
+}
+
+.active  .delay-2 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 0.4s;
+}
+
+.active  .delay-3 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 0.6s;
+}
+
+.active  .delay-4 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 0.8s;
+}
+
+.active  .delay-4 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 1s;
+}
+
+.active  .delay-5 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 1.2s;
+}
+
+.active  .delay-6 {
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 1.4s;
+}
+.active  .delay-7{
+  animation: load-bottom 1s ease forwards ;
+  animation-delay: 1.6s;
+}
+
+.footer{
+  transition: 0.2s;
 }

@@ -1,10 +1,11 @@
 .contacts{
   background:linear-gradient(rgba(#181818 , .2), rgba(#181818 , .2) ), url("../images/pic/background/contacts-bg.jpg") no-repeat ;
-  background-size: cover;
-  padding: 17.56% 0 16.75%;
-  background-position: center;
-  position: relative;
-
+  background-size: 100% 90%;
+  padding: 17.56% 0 0 0 ;
+  background-position: top;
+  position: absolute;
+  width: 100%;
+  height: 70%;
 }
 
 .contacts__inner{
@@ -15,7 +16,7 @@
 }
 
 .contacts__content{
-  @include font_gilroi_light(300,20px,#fff);
+  @include font_gilroi_light(300,1.56vw,#fff);
   line-height: 30px;
   display: inline-block;
   padding: 0 0 30px 0;
@@ -39,7 +40,7 @@
 }
 
 .contacts__content--bold{
-  @include font_gilroy_exbold(400,20px,#fff);
+  @include font_gilroy_exbold(400,1.56vw,#fff);
   padding: 0;
   transition: 1s;
 }
@@ -69,6 +70,6 @@
   width: 22px;
 }
 .contacts+.section_footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
 }

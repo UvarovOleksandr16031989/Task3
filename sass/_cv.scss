@@ -1,0 +1,110 @@
+.sv{
+  position: fixed;
+  top: -4000px;
+  background-color: rgba(#020202, .9);
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  padding-top: 15.08%;
+  z-index: 20;
+}
+
+.cv__title{
+  @include font_gilroy_exbold(400,40px,#fff);
+  padding-bottom: 29px;
+}
+
+.cv__form{
+  padding-top: 49px;
+}
+
+.cv__inner-btn{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.cv__content{
+  @include font_gilroi_light(300,20px,#fff);
+  line-height: 30px;
+}
+
+.cv__form-content{
+  @extend .cv__content;
+}
+
+.cv__form-warning{
+  @extend .cv__content;
+  font-size: 13px;
+}
+
+.file_upload{
+  @extend .more-btn;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  @include font_gilroi_light(300,12px,#fff);
+  padding-right: 21px;
+  padding-left: 49px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.file_upload:hover>.file_upload__span{
+  color: #ff4343;
+}
+
+.file_upload__span{
+  @include font_gilroi_light(300,17px,#fff);
+  transition: 1s;
+}
+.cvOpen{
+  top: 0px;
+}
+.cv__file{
+  display: none;
+}
+
+
+
+.cv__close{
+  width: 54px;
+  height: 50px;
+  border: 1px solid rgba(#f7f7f9, .5);
+  cursor: pointer;
+  position: absolute;
+  right:45px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.cv__close-item{
+  width: 15px;
+  height: 3px;
+  background-color: #efeeee;
+  transition: 1s;
+}
+
+.cv__close-item--top{
+  transform: rotate(45deg);
+}
+
+.cv__close-item--bottom{
+  transform: rotate(-45deg);
+  margin-left: -15px;
+}
+
+.cv__close:hover>.cv__close-item{
+  background-color: #ff4343;
+}
+
+.cv__close:hover{
+  border-color: #ff4343;
+}

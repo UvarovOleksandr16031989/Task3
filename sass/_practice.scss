@@ -1,11 +1,12 @@
 .practice{
   background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/grey_bg.png") no-repeat ;
-  background-size: cover;
-  padding: 135px 0 195px;
+  background-size: 100% 90%;
+  padding: 8.53vw 0 0 0;
   position: absolute;
-  opacity: 0;
-  transition: 1s;
-  background-position: center;
+  opacity: 1;
+  transition: 0.5s;
+  background-position: center top;
+  width: 100vw;
 }
 
 .practice:before{
@@ -40,14 +41,14 @@
 .practice__content{
   overflow: hidden;
   text-overflow: ellipsis;
-  @include font_gilroi_light(300,13px,#efeeee);
-  line-height: 22px;
+  @include font_gilroi_light(300,1.02vw,#efeeee);
+  line-height: 1.72vw;
 }
 
 .practice__title-content{
-  @include font_gilroy_exbold(400,14px,#fff);
-  line-height: 20px;
-  padding: 20px 0;
+  @include font_gilroy_exbold(400,1.09vw,#fff);
+  line-height: 1.56vw;
+  padding: 1.56vw 0;
 }
 
 .practice__about:hover .practice__title-content{
@@ -55,8 +56,8 @@
 }
 
 .practice__indicator{
-  width: 50px;
-  height: 50px;
+  width: 3.91vw;
+  height: 3.91vw;
   border: 1px solid rgba(#c5c5c5, .3);
   position: relative;
 
@@ -64,14 +65,14 @@
 
 .practice__indicator:after{
   content: '';
-  width: 16px;
-  height: 6px;
+  width: 1.25vw;
+  height: 0.47vw;
   display: inline-block;
   background: url("../images/pic/icons/arrow.png") no-repeat center;
   left: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
-  margin-left: -8px;
+  background-size: cover;
   position: absolute;
 }
 .practice__about:hover .practice__indicator:after{
@@ -80,19 +81,19 @@
 
 .practice__about:hover .practice__indicator:before{
   content: '';
-  width: 9px;
-  height: 8px;
+  width: 0.7vw;
+  height: 0.63vw;
   display: inline-block;
   background: url("../images/pic/icons/plus.png") no-repeat center;
   left: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
-  margin-left: -4.5px;
+  background-size: cover;
   position: absolute;;
 }
 .practice__about{
-  padding: 0 0 40px 0;
+  padding: 0 0 5.13vw 0;
   cursor: pointer;
   position: relative;
-  z-index: 10;
+
 }

@@ -1,12 +1,12 @@
 .section_trust{
-  padding: 90px 0 80px 0;
+  padding: 7.03vw 0 0 0;
   position: absolute;
   width: 100%;
-  opacity: 0;
-  transition: 1s;
-  background: linear-gradient(rgba(#181818 , .57), rgba(#181818 , .57) ),url("../images/pic/background/color_bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 1;
+  transition: 0.5s;
+  background: linear-gradient(rgba(#181818 , .57), rgba(#181818 , .57) ),url("../images/pic/background/color_bg.png") no-repeat;
+  background-size: 100% 95%;
+  background-position: top;
 
 }
 
@@ -17,8 +17,8 @@
 
 .trust__card {
   margin-bottom: 20px;
-  height: 180px;
-  max-width: 300px;
+  height: 16.06vw;
+  max-width: 23.44vw;
   border: 1px solid #efeeee;
   display: flex;
   flex-direction: row;

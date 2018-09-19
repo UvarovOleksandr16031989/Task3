@@ -1,12 +1,16 @@
 .header{
   background:linear-gradient(rgba(#181818 , .8), rgba(#181818 , .8) ), url("../images/pic/background/header-bg.png") no-repeat ;
-  background-size: cover;
-  padding: 175px 0 195px;
+  background-size: 100% 90%;
+  padding: 15.33vw 0 0 0;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   transition: 1s;
-  background-position: center;
+  background-position: top;
   width: 100%;
+  height: 100%;
+}
+.header.next{
+  height: 100%;
 }
 .header:before{
   width: 153px;
@@ -31,14 +35,16 @@
 
 }
 .header__corporation{
-  @include font_gilroi_light(300,20px,#fff);
-  padding-bottom: 33px;
+  @include font_gilroi_light(300,1.56vw,#fff);
+  padding-bottom: 2.58vw;
+
 }
 .header__title{
-  @include font_gilroy_exbold(400,100px,#fff);
-  padding-bottom: 29px;
+  @include font_gilroy_exbold(400,7.81vw,#fff);
+  padding-bottom: 2.27vw;
+
 }
-.header__title:after{
+.header__after:after{
   width: 1px;
   height: 100%;
   background: rgba(#ffffff, .1);
@@ -49,7 +55,8 @@
 
 }
 .header__services{
-  @include font_gilroi_light(300,50px,#ff4343);
+  @include font_gilroi_light(300,3.91vw,#ff4343);
+
 }
 
 .aside__burger,
@@ -61,11 +68,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: fixed;
-  right: 10px;
-  bottom: 50px;
+  position: absolute;
+  right: 28px;
+  bottom: 26vh;
   z-index: 10;
-
 }
 
 .header__arrow{
