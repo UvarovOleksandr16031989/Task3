@@ -1,0 +1,1 @@
+document.getElementById("demosMenu").addEventListener("change",function(e){var t=document.getElementById("demosMenu");window.location.href=t.options[t.selectedIndex].getAttribute("id")+".html"});
